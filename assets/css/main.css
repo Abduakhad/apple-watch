@@ -1,0 +1,421 @@
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+}
+/* roboto-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
+}
+/* ROOT */
+:root {
+    /* colors */
+    --colortext: #777;
+    --colorPrimary: #333;
+    --colorSecondary: #000;
+    /* backgrounds */
+    --backgroundPrimary: #FFFFFF;
+    --backgroundSecondary: #DDDDDD;
+    /* btn colors */
+    --btnColor: #ea2419;
+    --btnHover: #fff;
+    --btnDisabled: #fff;
+    /* fonts */
+    --fontFamily: 'Roboto' , sans-serif;
+    --fontWeight: 700;
+    --fontSize: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fontFamily);
+    font-weight: var(--fontWeight);
+    font-size: var(--fontSize);
+    background-color: var(--backgroundPrimary);
+    color: var(--colorPrimary);
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+ol,
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+/*  HEADER STYLE START */
+.site-header{
+    width: 100%;
+    padding: 30px;
+    
+}
+.site-header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* NAV STYLE START */
+.site-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.site-nav__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-nav__link{
+    margin-right: 30px;
+    color: var(--colorPrimary);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%; 
+}
+.site-nav__input{
+    width: 100%;
+    height: 23px;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding-bottom: 6px;
+}
+
+/* NAV STYLE END  */
+
+/*  HEADER STYLE END */
+
+
+
+
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* MAIN STYLE START */
+
+
+/**************************************** HERO STYLE STATR********************************** */
+.site-hero{
+    background-image:url(../images/watches.png);
+    background-repeat: no-repeat;
+    background-size: 640px;
+    background-position: calc(50% + 600px )  5px;
+    
+}
+.site-hero__wrapper{
+    width: 587px;
+    height: 565px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.site-hero__content{
+    width: 490px;
+    height: 291px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+.site-hero__title{
+    width: 331px;
+    height: 60px;
+    margin-bottom: 30px;
+    color:var(--colorSecondary);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 120%; 
+}
+
+.site-hero__desc{
+    width: 490px;
+    height: 120px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    border-left: 3px solid #000;
+    color: var(--colorPrimary);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+.site-hero__btn{
+    width: 260px;
+    height: 51px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%; 
+    text-transform: uppercase;
+    
+}
+
+/************************************************* HERO STYLE END **************************************************** */
+
+/* <!----------------------------------- Know your  START------------------------------ --> */
+.site-card{
+    width: auto;
+    height: 393px;
+    margin-bottom: 140px;
+    
+    
+}
+.site-card__wrapper{
+    width: 1000px;
+    height: 253px;
+    padding: 70px;
+    
+    
+}
+.site-card__list{
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    
+    
+}
+
+.site-card__item{
+    width: 280px;
+    height: 196px;
+    margin-right: 80px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.site-card__title{
+    width: 280px;
+    height: 27px;
+    margin-bottom: 30px;
+    color: var(--colorSecondary);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%; 
+    text-transform: uppercase;
+}
+
+.site-card__desc{
+    width: 280px;
+    height: 168px;
+    margin-bottom: 30px;
+    color: var(--colorPrimary);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%; 
+}
+
+.site-desc-next__bnt{
+    color: var(--btnColor);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%; 
+    text-transform: uppercase;
+    
+} 
+/* <!----------------------------------- Know your  END------------------------------ --> */
+
+/* <!--------Nike Sport Band.Light. Flexible.Breathable. START-------------------> */
+.site-nike-sport{
+    width: auto;
+    height: 739px;
+    margin: 70px;
+    padding: 70px;
+}
+
+.site-nike__wrapper{
+    width: 1000px;
+    height: 600px;
+    margin-left: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.site-nike__start{
+    width: 490px;
+    height: 387px;
+    margin-right: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    
+}
+.site-nike__title{
+    width: 380px;
+    height: 180px;
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+.site-nike__desc{
+    width: 490px;
+    height: 96px;
+    margin-bottom: 30px;
+    color: var(--colorPrimary);
+    padding-left: 40px;
+    border-left: 3px solid #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; 
+    
+}
+
+.site-nike__btn{
+    width: 260px;
+    height: 51px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btnColor);
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%; 
+    text-transform: uppercase;
+}
+
+.site-nike-end__img{
+    width: 400px;
+    height: 600px;
+}
+
+
+/* <!-------------------Nike Sport Band.Light. Flexible.Breathable. END-------------------------------> */
+
+
+
+/* <!----------------------------------- Take control of your health. START------------------------------ --> */
+
+.site-take{
+    width: 100%;
+    height: 830px;
+    background-image: url("../images/bg-end.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:calc(50%);
+}
+
+.site-take__wrapper{
+    width: 490px;
+    height: 351px;
+    margin: 240px 125px 239px 635px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+   
+}
+
+.site-take__title{
+    width: 490px;
+    height: 120px;
+    margin-bottom: 30px;
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 120%; 
+}
+.site-take__desc{
+    width: 490px;
+    height: 120px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    border-left: 3px solid #FFF;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    
+}
+.site-take__btn{
+    width: 260px;
+    height: 51px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    background-color: var(--btnColor);
+}
+
+/* <!----------------------------------- Take control of your health. END------------------------------ --> */
+
+
+/* MAIN STYLE END */
